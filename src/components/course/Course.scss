@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+
+.course-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $light;
+}
+.course-video {
+    border: 5px solid $light;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        border: 5px solid $regular;
+        box-shadow: 0 0 10px $regular;
+    }
+}
+.course-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $light;
+}
+.course-about {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $main-color;
+    background: $light;
+}
+.course-lessons {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $main-color;
+    background: $light;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background: $regular;
+    }
+}
+.course-lessons-blocked {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $main-color;
+    background: $dark;
+    cursor: not-allowed;
+}
+.course-lessons-active {
+    border: 3px solid $regular;
+    transform: translateX(15px);
+}
+.course-label {
+    color: $light;
+    font-size: 1rem;
+}
+.course-button {
+    background: $regular;
+    color: $main-color;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background: $light;
+        transform: scale(1.1);
+    }
+}
+.course-video {
+    position: relative;
+}
+.course-loading-animation {
+    height: 360px;
+}
+.course-loading-progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: $light;
+}
+.course-loading-progress {
+    height: 100%;
+    background-color: $regular;
+    box-shadow: 0 0 10px $regular;
+    transition: width 0.5s ease-in-out;
+}
+.course-loading-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $light;
+}
+// .course-pip {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }

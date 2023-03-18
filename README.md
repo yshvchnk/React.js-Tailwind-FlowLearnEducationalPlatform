@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+<!-- markdownlint-disable -->
+# FLOW LEARN (Educational Platform)
+![alt text](./src/common/graphics/flowlearn_black_text_500.png "flowlearn-logo")
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of content
+&nbsp;&nbsp;&nbsp; [About Project](#about-project)\
+&nbsp;&nbsp;&nbsp; [Screenshots](#screenshots)\
+&nbsp;&nbsp;&nbsp; [Technologies Used](#technologies-used)\
+&nbsp;&nbsp;&nbsp; [Prerequisites](#prerequisites)\
+&nbsp;&nbsp;&nbsp; [Installation](#installation)\
+&nbsp;&nbsp;&nbsp; [Usage](#usage)\
+&nbsp;&nbsp;&nbsp; [Acknowledgments](#acknowledgments)
 
-## Available Scripts
+## About Project
 
-In the project directory, you can run:
+This is a React-based educational platform that displays courses dynamically created from an API.
+The platform contains two pages:
 
-### `npm start`
+1.  **Page with courses** - displays all available courses
+    -   10 leatest courses on a page and pagination in the end for browsing other courses
+    -   when hover on a course card - preview video starts playing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2.  **Page with a specific course** - displays details about the course (videoplayer with the first video opened, list of lessons, description etc.) 
+    - when user click another lesson - corresponding video is shown 
+    - active lesson has specific style
+    - user can't watch the locked lessons (these lessons have different style)
+    - progress of the user is saved in the local storage
+    - user can manipulate video speer (*CTRL+Q* to speed up and *CTRL+W* to speed down)
+    - picture in picture feature for video player available through the button **Pic-in-pic Mode**
+
+**Web application fully responsive and adapted for a mobile version.**
+
+**Errors from APIs are processed.**
+
+**Added animation of video downloading**
+
+## Screenshots:
+
+### Page with Courses
+![alt text](./src/common/screenshots/first-page.png "flowlearn-first-page")
+### Page with a specific course
+![alt text](./src/common/screenshots/second-page.png "flowlearn-second-page")
+### Mobile version
+![alt text](./src/common/screenshots/first-page-mobile.png "flowlearn-first-page-mobile")
+![alt text](./src/common/screenshots/second-page-mobile.png "flowlearn-second-page-mobile")
+
+### Color Palette 
+![alt text](./src/common/color-palette.png "flowlearn-colour-palette")
+## Technologies Used:
+
+-   React.js
+-   Tailwind.css
+-   SCSS (custom styles)
+-   Axious library (work with API)
+-   React-Router (routing through the project)
+
+## Prerequisites
+
+You will need to have Node.js and npm installed on your machine.
+
+## Installation
+
+To get started with this project, follow the steps below:
+1. Clone the repository to your local machine:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `git clone https://github.com/yshvchnk/React.js-Tailwind-FlowLearnEducationalPlatform.git`
+
+2. Navigate to the project directory:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `cd flowlearn`
+
+3. Install dependencies:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `npm install`
+
+4. Start the development server:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `npm start`
+
+## Usage
+
+Once you have started the development server, open a web browser and navigate to localhost to view the application:\
+[http://localhost:3000](http://localhost:3000)
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+This project was made possible by the API provided by [Genesis](https://www.gen.tech/).\
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

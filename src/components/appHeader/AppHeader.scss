@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.app-header {
+    background-color: $main-color;
+    color: $light;
+}
+.logo-name {
+    font-size: 2rem;
+}
+.menu-item {
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $regular;
+    }
+}
+.logo-img {
+    transition: all 0.8s ease-in-out;
+    &:hover {
+        transform: rotate(360deg);
+    }
+}
+.menu-button {
+    height: 2.5rem;
+    width: 3rem;
+}
